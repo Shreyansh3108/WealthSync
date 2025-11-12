@@ -20,7 +20,7 @@ type Transaction = {
   date: string; // 'dd/mm/yyyy'
 };
 
-export default function Dashboard(): JSX.Element {
+export default function Dashboard() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState('');
   const [registeredUsers, setRegisteredUsers] = useState<{ username: string; password: string }[]>([]);
